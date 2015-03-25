@@ -1,2 +1,2 @@
-cookbook-phpredis
+phpenv-redis
 ===============
