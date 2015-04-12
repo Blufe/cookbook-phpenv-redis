@@ -20,7 +20,7 @@ ruby_block "phpenv-redis::install#set-env-phpenv" do
 end
 
 git File.join(node["phpenv"]["phpredis"]["src_dir"], "phpredis") do
-  repository "git://github.com/nicolasff/phpredis.git"
+  repository "git://github.com/phpredis/phpredis.git"
   reference  "master"
   action     :sync
   user       node["phpenv"]["user"]
