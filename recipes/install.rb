@@ -34,6 +34,7 @@ bash "compile phpredis" do
     eval "$(phpenv init -)"
     phpize
     ./configure
+    make clean
     make
     make install
   EOH
